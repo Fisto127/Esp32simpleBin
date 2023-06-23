@@ -8,22 +8,22 @@ from firebase_admin import db
 # Replace with your actual service account credentials
 service_account_credentials = {
   "type": "service_account",
-  "project_id": "test-bd99e",
-  "private_key_id": "dc19e8b3c4e3a60d060335357b222510c9721937",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDSNkfefaJKDTxA\nORq22tg1sJHCsnYH1h6LAzzi4KnbWvhkyH8qZt+rcXoQ5wuG2ml1T74NNOSpf7gB\nWvBRDGS6AlRYeOjlvRrxK3I9HFaDzvcFWzar9VzUBE5JJR2IANaVs/tEovysftjU\nBGkVaQ43bgDQpu96wCuwHAWG/KBoDbspC/ilxjNHquVCuekGnp1OvSteGbd9LyLO\n3lowgkFIwxddQNJ5vMUd5qYNL256+Lbpk+S6XlDpA0PouraNHIWf3cglQA0mTBbJ\nTx8Zc+E//dO+g0fRBAlUjX/AnV5H0vE/ol5xOSENudRaGKMdIRn17xLegH8cIeLj\n46HGZ2xdAgMBAAECggEADS44nud/PcfrK3a5KVZ7AJDP7uaMNo0TMLG1B1/BXr7r\nPLyClrjJFQGiPv2RsDSxMJkdqEvU+5jFw5X9ZAOULEKZocuBBOiw0AbinJjShuS7\nAeO4f5s8pRGZDAaO/bhZvBzDKEhU8gbpFxAou54w9UJJPEv/T5HNm3cCVLax4xw+\nM95kF6Z/M7TZsV6QV8ytavkPzrO+RlMSkuIp99cF6R/3Ptt07yJcq1B7E/uVHXJR\nuyEYLddn38qF5iGiXkhBY/LPnwXtIojE5N5EKd+wALnnsGsL//5W+eIirhGPo2SW\noiJTJXL4l8fIxCcT/O3zCcci9bQuzS90/ICWUQRsyQKBgQDr5x/SFBsVSc/aONSz\nNaXbXl+bFzqDnLxWVl6WOKnebWEANRGD7QdDhN6/yShwffN/mCbOeAT5rTRnpaI9\n/EXzkNH7vdnfLRFMqmc9T2swXtgIqM0QMpRyxwV1OjVR/+Ms2h8WMFNi1ZwHbpwF\nhMUqkKi9jPFrlWRUq8BY7mvn9QKBgQDkHtuw0oP8wh+r0TwGhlJAWUcCeBWjKzNW\npsWkedzbJWbFWsIwQFgCK7wC1PRn0OrKXHq6B8CCWPReKQ2BpqaHFN+/xIROfu2b\nL5ODJirGoITJxaDCsp1xEQFhB4FIEyfZiHMFPAPokQYjxJNUiL3ez1+sh+PNRwYv\nU1+N1S35yQKBgCO2BEIoGwV4/Acb7U8HwwjXW3+933THCFfFkWIKR+TNCA8g+XrQ\nKfZVqea8i+ujlXXuUYmV76LgTnuWPl5Fz00U0kTas52uU90YOrK0UBStduSwsQJP\ntds+N5xMaH/2TayfhG82d5kRnyIc42+Obs6HwZOYP3+6yMpsiZys0xb1AoGAd2M7\nAQi78P27y5Vev99ujqTqx/0G/fVvEeuIRrNMhhjF94WvWcdjCAfRhv3ix66MIspR\npKjH9LAPfHQp0G/ieZHQJDH6OIavXeeBYUMJYhjCRkM7BoqqYXFP8nMWEx2LXorN\n/7BQL1gvCWso3DYQgNqxLL+V1mpUb1JIERe/zxkCgYB3NtpLa06yKrpCItsQVree\nx1nY4dbbPn8NnzqTzzdwEbNp5c9vCMF23c/Xz7cwCZy3XRYITa7314yBC8lXfEmt\nTVEY3ymThs6Gie71+ulNcwW/zHrkQkX690v5pXp/fic2EQeg0pzHX4xGykpj0mhB\nqDfAuBUzYA7Aiq9CAFLBfA==\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-zbzlm@test-bd99e.iam.gserviceaccount.com",
-  "client_id": "103170913159097449706",
+  "project_id": "mrhandy-8d8aa",
+  "private_key_id": "9783ce97425540e7dab71b9b40cb40f6719d0623",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtMh/waxWuZBlL\noKJ6KjCy2Uvs5gFaFrHsFc4DoSz3Xv3ZOnz6EO39Z1vn6PJWzhTi/vxj1pFhaPIa\nfRvdjHjimll9OpeC/QAMPmHu0GYeGaGu7e6jMNLPNDfe+maXwcH0ZPHKl7/hx1d+\nn5hObcVii3EPCgNluoYD7OuXvVac9jIfwsEruo+YKtXquNRzehKymP5LeOfqCz11\nAKYXMg+cwfJw5EgTRKnyW1jNnZTfHvuf/uYXx76onSip7m4a3h6XqZvbJ3pgJmRG\n7UDdbH1yqaMYaOuuwzkm5176cavwnHBZlKPnAKmQOJd+HWOBLSEETQ7+OhkXL/XW\nCnobXfapAgMBAAECggEAIHQykPH3+5gtN0Mv/vVV78WRGSCWY0O6blM9qedzTh1C\nMwjnL1KpzeCm06OOeZ6fQlPmhmzIDDlGmJkV9iNi6Y9jsngeuQBgmGq+Hip14DEM\nX4OdQn4dGo+d4o4IWGqJxhp+Rmi+H3gjmIoeV5/xK0CW3GsTbOYRQ74K/YGQr9OR\nXnqojKPW8PT26AVrSRTqEGsD1cTkdE67HzdltKt9qNJysvuYwNjs7gcVTwAvowGN\nprJfEHsooPtTQuzZn7D/rQ+eVlKzl0v9O/xepWLjEc5yiPfL2TBJzQ2zXrYFBGje\naFVGkNhtENFgyASgjRDrevYofT9A0aaWxFngWKtC4wKBgQDcARAk9Z4AUHre8mWc\nhy0LkoZ1ANqxHjOI+SduWZhcfIvUhmbbW39+ttT1fVb/MGxSmG6U15awbmU7bK+4\npaMG2lviJQXDtrviwRDWsziBsjf5uOuHcgNOSycwYicNs2SHKVRsE5ZB9HdKshGC\nHs8qnCFrCz8O6e2F2biddgVcCwKBgQDJiHr+CSN1QgpAeThKFHeSVAznD8EjD7FR\nh1WTlkKBFA5PlUkzTG4cJsBn6zbSfIHN4/1OOIFU2dZyC1OlzTrbE4GfsmDrqbTK\nTAgoS+ERstdyH07t9QP64cPHkKoD7XwPen2B8QRoJTRo66lO8nShs5FZb9fsVnFd\nFwVE9Wc0mwKBgQDDPW5GXnLJdKKWGCd0scGX84C/dPKfHF4/wFzt4TUFXsH46Q1+\nvcR3f2meMo1yClcXNY9tJ6XjDRVplxqakuQKwN2p45EqDpDOuudmocYT00U5qJHc\nsaGdabRti618yyb7jAIPp5JBFeKHt18ySoUvGz/M7z4WziKsFntvwb0f4QKBgCMf\ntD/eG93t2peOCO9wTb6lA3Kp3kFcFM1ext1oDMMuWagpHo7gPTiO0G3MIsvgg0b8\n+0LMuk2tgaBytOtqr11LMwZAMoAgHbA8PBe50coh30a2ii0SzNTG0DZR0i/JDhws\nfv9MoDX+dfnrSKDHxOgBwc1SntFD55IP1w1Dr+8NAoGAX0HHMw+g5f6vOvfoWccs\n2HS9nwQbKBCqHW1KJaFgc/0gF/wf9rBJN6w4COgXxN6ekz98rcYpfwoA6xHZ4cVi\nPn7EU5HKuQ67G6YnaYcDug5YfxfDT6CsB59U98duVimPD7wqJ5ACjtLyKG7eZmWx\nkitEq3zLxqc7wTjMKum9nTU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-w0wnt@mrhandy-8d8aa.iam.gserviceaccount.com",
+  "client_id": "110214433717431043021",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zbzlm%40test-bd99e.iam.gserviceaccount.com",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-w0wnt%40mrhandy-8d8aa.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
 
 # Initialize Firebase credentials
 cred = credentials.Certificate(service_account_credentials)
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://test-bd99e-default-rtdb.europe-west1.firebasedatabase.app/'
+    'databaseURL': 'https://mrhandy-8d8aa-default-rtdb.europe-west1.firebasedatabase.app/'
 })
 
 # Get a reference to the 'OTA' node
@@ -40,15 +40,30 @@ def callback(event):
     if upload :
         if code == 1:
             print("Running ota with Blink red")
-            subprocess.call(['Esp32simpleBin/Test/script1'])
+            subprocess.call(['Esp32simpleBin/Test/script1.sh'])
+            db.reference('OTA').update ({
+                'Current': 1,
+                'UPD': False
+            })
         elif code == 2:
             print("Running ota with blink blue")
-            subprocess.call(['Esp32simpleBin/Test/script2'])
+            subprocess.call(['Esp32simpleBin/Test/script2.sh'])
+            db.reference('OTA').update ({
+                'Current': 2,
+                'UPD': False
+            })
         elif code == 3:
             print("Running ota with blink red blue")
-            subprocess.call(['Esp32simpleBin/Test/script3'])
+            subprocess.call(['Esp32simpleBin/Test/script3.sh'])
+            db.reference('OTA').update ({
+                'Current': 3,
+                'UPD': False
+            })
         else:
             print("Error")
+            db.reference('OTA').update ({
+                'UPD': False
+            })
     
 # Set up the listener
 refota.listen(callback)
